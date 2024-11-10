@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS file -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar-container">
+          <div id="hamburger-menu" class="hamburger-menu">
+            <i class="fas fa-bars"></i>
+          </div>
+          
+          <div class="logo">
+              <h1><span class="web">web</span><span class="craft">craft</span></h1>
+              <p class="slogan">Your digital world, crafted with passion</p> <!-- Slogan -->
+          </div>
+          
+          <ul class="navbar-links">
+              <li><a href="/indix.html">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              
+              <li><a href="/#services">Services</a></li>
+              <li><a href="#home">our work</a></li>
+              <li><a href="#home">fAq</a></li>
+              <li><a href="#contact"> Reviews</a></li>
+              <li><a href="/contact/contact.html">Contact</a></li>
+              <li><a href="#contact">blogs</a></li>
+              <li class="language-selector">
+                <select id="language-select" onchange="changeLanguage()">
+                  <option value="en">English</option>
+                  <option value="ar">Arabic</option>
+                </select>
+              </li>
+            </ul>
+        </div>
+      </nav>
+      </header>
+<br><br> <br><br>
+    <main class="blog-container">
+       
+
+        <article class="blog-post">
+            <h1>Understanding the Future of Web Development</h1>
+            <p class="post-meta">Posted on November 6, 2024 by Author Name</p>
+            <img src="blog-image.jpg" alt="Blog Image" class="blog-image">
+            <div class="post-content">
+                <p>Web development is constantly evolving, with new technologies and frameworks emerging each year. As we head into 2024, there are several key trends shaping the future of the web. In this article, we will explore the most important web development trends...</p>
+                <p>The landscape of web development is rapidly changing, and it is essential for developers to stay ahead of the curve. With the rise of frameworks like React, Vue, and Angular, the demand for modern web development skills is higher than ever...</p>
+                <blockquote>
+                    "The future of web development lies in the ability to create fast, responsive, and interactive websites that provide excellent user experiences."
+                </blockquote>
+                <p>In this post, we will take a deep dive into some of the most promising web technologies that will define the future of web development. We’ll also look at the growing role of artificial intelligence and machine learning in web development...</p>
+            </div>
+        </article>
+
+        <aside class="blog-sidebar">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#">Marketing</a></li>
+                <li><a href="#">Programming</a></li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Business</a></li>
+            </ul>
+
+            <h3>Popular Posts</h3>
+            <ul>
+                <li><a href="#">Understanding the Basics of Digital Marketing</a></li>
+                <li><a href="#">Top 10 Web Development Trends in 2024</a></li>
+                <li><a href="#">How to Create a Winning Ad Campaign</a></li>
+            </ul>
+        </aside>
+
+    </main>
+ <!-- Footer Section -->
+ <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <img src="logo.png" alt="Digital Agency Logo" class="footer-logo-img">
+          <p class="footer-tagline">Innovating for a brighter future.</p>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <p><i class="fas fa-phone-alt"></i> +1 234 567 890</p>
+          <p><i class="fas fa-envelope"></i> info@digitalagency.com</p>
+        </div>
+        <div class="footer-newsletter">
+          <h3>Subscribe to Our Newsletter</h3>
+          <p>Get the latest updates and news.</p>
+          <input type="email" placeholder="Your Email">
+          <button>Subscribe</button>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Digital Agency. All rights reserved.</p>
+        <div class="social-icons">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script>
+    const hamburgerMenu = document.getElementById("hamburger-menu");
+    const navbarLinks = document.querySelector(".navbar-links");
+
+    hamburgerMenu.addEventListener("click", () => {
+      navbarLinks.classList.toggle("active");
+    });
+  </script>
+</body>
+</html>

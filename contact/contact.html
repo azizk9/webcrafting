@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,800;1,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قسم الاتصال</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+          <div id="hamburger-menu" class="hamburger-menu">
+            <i class="fas fa-bars"></i>
+          </div>
+          
+          <div class="logo">
+              <h1><span class="web">web</span><span class="craft">craft</span></h1>
+              <p class="slogan">Your digital world, crafted with passion</p> <!-- Slogan -->
+          </div>
+          
+          <ul class="navbar-links">
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              
+              <li><a href="#services">Services</a></li>
+              <li><a href="#our-works">our work</a></li>
+              <li><a href="#faq-section">fAq</a></li>
+              <li><a href="#user-reviews"> Reviews</a></li>
+              <li><a href="/contact/contact.html">Contact</a></li>
+              <li><a href="/blogs/index.html">blogs</a></li>
+              <li class="language-selector">
+                <select id="language-select" onchange="changeLanguage()">
+                  <option value="en">English</option>
+                  <option value="ar">Arabic</option>
+                </select>
+              </li>
+            </ul>
+        </div>
+      </nav>
+    </header>
+  <br><br><br><br>
+    <div class="container">
+        <main class="row">
+            <section class="col left">
+                <div class="contactTitle">
+                    <h2>تواصل معنا</h2>
+                    <p>لوريم إيبسوم دولار سيت أميت، كونسيكتتتور أديبيسيسينغ إليت، سيد دو إيوسمد.</p>
+                </div>
+                <div class="contactInfo">
+                    <div class="iconGroup">
+                        <div class="icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="details">
+                            <span>الهاتف</span>
+                            <span>+00 110 111 00</span>
+                        </div>
+                    </div>
+                    <div class="iconGroup">
+                        <div class="icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="details">
+                            <span>البريد الإلكتروني</span>
+                            <span>name.tutorial@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="iconGroup">
+                        <div class="icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="details">
+                            <span>الموقع</span>
+                            <span>X Street, Y Road, سان فرانسيسكو</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="socialMedia">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </section>
+
+            <section class="col right">
+                <form class="messageForm">
+                    <div class="inputGroup halfWidth">
+                        <input type="text" name="name" required="required">
+                        <label>اسمك</label>
+                    </div>
+                    <div class="inputGroup halfWidth">
+                        <input type="email" name="email" required="required">
+                        <label>البريد الإلكتروني</label>
+                    </div>
+                    <div class="inputGroup fullWidth">
+                        <input type="text" name="company" required="required">
+                        <label>الشركه</label>
+                    </div>
+                    <div class="inputGroup fullWidth">
+                        <label for="request-type"><i class="fas fa-list"></i> نوع الطلب *</label>
+                        <select id="request-type" name="request-type" required>
+                            <option value="graphic-design">تصميم جرافيكي</option>
+                            <option value="web-development">تطوير مواقع</option>
+                            <option value="consulting">الاستشارة</option>
+                            <option value="branding">الهوية البصرية</option>
+                            <option value="wordpress-development">تطوير وورد بريس</option>
+                            <option value="recruitment">التوظيف</option>
+                            <option value="ui-ux-design">UI/UX تصميم</option>
+                            <option value="app-development">تطوير تطبيقات</option>
+                            <option value="other">أخرى</option>
+                        </select>
+                    </div>
+                    <div class="inputGroup fullWidth">
+                        <textarea name="message" required="required"></textarea>
+                        <label>قل شيئًا</label>
+                    </div>
+                    <div class="inputGroup fullWidth">
+                        <button type="submit">إرسال الرسالة</button>
+                    </div>
+                    
+                </form>
+            </section>
+        </main>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-links">
+                    <h3>Uitility Page</h3>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">terms and conditions</a></li>
+                        <li><a href="#">refound Policy</a></li>
+                      
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Get in Touch</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Digital Street, Tech City</p>
+                    <p><i class="fas fa-envelope"></i> contact@digitalagency.com</p>
+                    <p><i class="fas fa-phone-alt"></i> +123-456-7890</p>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Stay Updated</h3>
+                    <p>Sign up for our newsletter and never miss out on our latest news and offers.</p>
+                    <form action="#" method="post">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn-subscribe">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Digital Agency | All Rights Reserved</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

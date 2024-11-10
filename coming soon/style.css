@@ -1,0 +1,165 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+/* Background Style */
+.coming-soon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #005c39, #8e5ba2);
+    color: #fff;
+    text-align: center;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    animation: backgroundAnimation 10s infinite ease-in-out;
+}
+
+.coming-soon-content {
+    z-index: 10;
+    max-width: 600px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(30px);
+    animation: slideUp 1s ease-out;
+}
+
+/* Title Styling */
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Description Styling */
+p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.8);
+    animation: fadeIn 2s ease-in-out 1s;
+}
+
+/* Subscription Form */
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    animation: fadeIn 2s ease-in-out 1.5s;
+}
+
+input[type="email"] {
+    padding: 1rem;
+    font-size: 1.1rem;
+    width: 70%;
+    margin-right: 10px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+}
+
+input[type="email"]:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+button {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    background-color: #8e5ba2;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 2px solid #8e5ba2;
+}
+
+button:hover {
+    background-color: transparent;
+    color: #8e5ba2;
+    transform: scale(1.1);
+}
+
+.social-icons {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    font-size: 2rem;
+    margin: 0 15px;
+    color: #fff;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #8e5ba2;
+    transform: scale(1.2);
+}
+
+/* Background Animation */
+@keyframes backgroundAnimation {
+    0% {
+        background: linear-gradient(135deg, #005c39, #8e5ba2);
+    }
+    50% {
+        background: linear-gradient(135deg, #8e5ba2, #005c39);
+    }
+    100% {
+        background: linear-gradient(135deg, #005c39, #8e5ba2);
+    }
+}
+
+/* Text Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Slide Up Animation */
+@keyframes slideUp {
+    0% {
+        transform: translateY(30px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    input[type="email"] {
+        width: 100%;
+    }
+}

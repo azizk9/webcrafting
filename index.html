@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Agency</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/WhatsApp.svg" alt="WhatsApp">
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+  <head>
+    <link rel="icon" sizes="16x16" href="logo  (2) (1).png">
+    <link rel="icon" sizes="32x32" href="logo  (2) (1).png">
+    <link rel="icon" sizes="48x48" href="logo  (2) (1).png">
+</head>
+
+</head><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+<body>
+  <!-- Navigation Menu -->
+  <header>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div id="hamburger-menu" class="hamburger-menu">
+          <i class="fas fa-bars"></i>
+        </div>
+        
+        <div class="logo">
+            <h1><span class="web">web</span><span class="craft">craft</span></h1>
+            <p class="slogan">Your digital world, crafted with passion</p> <!-- Slogan -->
+        </div>
+        
+        <ul class="navbar-links">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            
+            <li><a href="#services">Services</a></li>
+            <li><a href="#our-works">our work</a></li>
+            <li><a href="#faq-section">fAq</a></li>
+            <li><a href="#user-reviews"> Reviews</a></li>
+            <li><a href="/contact/contact.html">Contact</a></li>
+            <li><a href="/blogs/index.html">blogs</a></li>
+            <li class="language-selector">
+              <select id="language-select" onchange="changeLanguage()">
+                <option value="en">English</option>
+                <option value="ar">Arabic</option>
+              </select>
+            </li>
+          </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+        <h1>Welcome to Our Digital Agency</h1>
+        <p>We help businesses grow and thrive in the digital world.</p>
+        <div class="hero-buttons">
+            <button class="btn-primary">Get Started</button>
+            <button class="btn-secondary" id="watchBtn">
+                <i class="fa-solid fa-play"></i> Watch
+            </button>
+        </div>
+    </div>
+
+    <!-- Video Section (Initially hidden) -->
+    <div class="video-section" id="videoSection">
+        <div class="video-container">
+            <video id="video" controls>
+                <source src="vedio.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <button class="close-video" id="closeVideo">Close Video</button>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Hidden Video Section -->
+    <div id="videoSection" class="video-section" style="display: none;">
+        <div class="video-container">
+            <video id="video" controls>
+                <source src="vedio.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <button id="closeVideoBtn" class="close-video">Close Video</button>
+        </div>
+    </div>
+</section>
+
+
+  <!-- About Us Section -->
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>We are a forward-thinking digital agency committed to helping businesses grow and thrive in the digital world. With years of experience in web development, digital marketing, and SEO, we provide cutting-edge solutions that deliver measurable results. Our team is made up of passionate professionals who are dedicated to bringing the best out of every project we take on.</p>
+
+    <div class="highlight-container">
+        <div class="highlight">
+            <i class="fas fa-rocket"></i>
+            <span>Innovative Solutions: We focus on innovation and creativity to deliver unique results.</span>
+        </div>
+
+        <div class="highlight">
+            <i class="fas fa-chart-line"></i>
+            <span>Results-Driven: We believe in measurable results that push businesses forward.</span>
+        </div>
+
+        <div class="highlight">
+            <i class="fas fa-users"></i>
+            <span>Passionate Team: Our dedicated team works tirelessly to bring your vision to life.</span>
+        </div>
+    </div>
+</section>
+
+  <!-- Services Section -->
+
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <p>We offer a wide range of innovative services designed to elevate your business.</p>
+
+    <div class="service-cards">
+        <div class="service-card">
+            <i class="fas fa-laptop-code"></i>
+            <h3>Web Development</h3>
+            <p>We build responsive and high-performance websites tailored to your business needs.</p>
+        </div>
+
+        <div class="service-card">
+            <i class="fas fa-search"></i>
+            <h3>SEO Optimization</h3>
+            <p>Improve your visibility on search engines and drive more traffic to your website.</p>
+        </div>
+
+        <div class="service-card">
+            <i class="fas fa-bullhorn"></i>
+            <h3>Digital Marketing</h3>
+            <p>Our digital marketing strategies will help you grow your brand and attract more customers.</p>
+        </div>
+
+        <div class="service-card">
+            <i class="fas fa-mobile-alt"></i>
+            <h3>Mobile App Development</h3>
+            <p>We create intuitive and user-friendly mobile apps that bring value to your users.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Our Works Section -->
+
+
+<section class="our-works" id="our-works">
+    <div class="container">
+        <h2>Our Previous Works</h2>
+        <p>We are proud of the projects we have executed. Here are some of the works we have done:</p>
+
+        <div class="works-slider swiper-container">
+            <div class="swiper-wrapper">
+                <!-- Work Item 1 -->
+                <div class="swiper-slide">
+                    <div class="work-item">
+                        <img src="img/hero.webp" alt="Web Design" />
+                        <h3>Company Name 1</h3>
+                        <p>A brief description of the project and what we achieved in it.</p>
+                    </div>
+                </div>
+
+                <!-- Work Item 2 -->
+                <div class="swiper-slide">
+                    <div class="work-item">
+                        <img src="img2.jpg" alt="Web Development" />
+                        <h3>Company Name 2</h3>
+                        <p>A brief description of the project and what we achieved in it.</p>
+                    </div>
+                </div>
+
+                <!-- Work Item 3 -->
+                <div class="swiper-slide">
+                    <div class="work-item">
+                        <img src="img3.jpg" alt="Marketing" />
+                        <h3>Company Name 3</h3>
+                        <p>A brief description of the project and what we achieved in it.</p>
+                    </div>
+                </div>
+
+                <!-- Work Item 4 -->
+                <div class="swiper-slide">
+                    <div class="work-item">
+                        <img src="img4.jpg" alt="Graphic Design" />
+                        <h3>Company Name 4</h3>
+                        <p>A brief description of the project and what we achieved in it.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="user-reviews" class="user-reviews">
+    <div class="container">
+        <h2 class="section-title">What Our Clients Say</h2>
+        <div class="review-slider swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="box">
+                        <h3>MD Mamun Hossain</h3>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt fugiat odit minus illum asperiores dolorum enim sint."</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <h3>Jonson Rew</h3>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt fugiat odit minus illum asperiores dolorum enim sint."</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <h3>Adiba Gaw</h3>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt fugiat odit minus illum asperiores dolorum enim sint."</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <h3>MD Mamun Hossain</h3>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt fugiat odit minus illum asperiores dolorum enim sint."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Add Review Button -->
+        <div class="review-btn-container">
+            <button class="review-form-btn" onclick="openReviewForm()">Add Your Review</button>
+        </div>
+    </div>
+</section>
+
+<!-- Modal HTML structure -->
+<div id="review-form-modal" class="review-form-modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeReviewForm()">&times;</span>
+
+        <h3>Share Your Experience</h3>
+        <form id="review-form">
+            <input type="text" id="user-name" placeholder="Your Name" required>
+            <input type="email" id="user-email" placeholder="Your Email" required>
+            <input type="tel" id="user-phone" placeholder="Your Phone Number" required>
+            <textarea id="review-text" placeholder="Write your review here..." required></textarea>
+            <button type="submit">Submit Review</button>
+        </form>
+    </div>
+</div>
+
+
+
+
+  
+
+ <!-- Blog Section -->
+ <section id="blog" class="blog">
+    <h2>Latest Articles</h2>
+    <p>Stay updated with our latest blog posts and insights.</p>
+
+    <div class="blog-cards">
+        <!-- Blog Post 1 -->
+        <div class="blog-card">
+            <div class="blog-card-image">
+                <img src="blog-image-1.jpg" alt="Blog Post 1">
+            </div>
+            <div class="blog-card-content">
+                <h3>Understanding Digital Marketing</h3>
+                <p>Explore the world of digital marketing and learn strategies to enhance your business growth.</p>
+                <a href="#" class="btn-primary">Read More</a>
+            </div>
+        </div>
+
+        <!-- Blog Post 2 -->
+        <div class="blog-card">
+            <div class="blog-card-image">
+                <img src="blog-image-2.jpg" alt="Blog Post 2">
+            </div>
+            <div class="blog-card-content">
+                <h3>Trends in Web Development</h3>
+                <p>Discover the latest trends and technologies in web development that are shaping the digital world.</p>
+                <a href="#" class="btn-primary">Read More</a>
+            </div>
+        </div>
+
+        <!-- Blog Post 3 -->
+        <div class="blog-card">
+            <div class="blog-card-image">
+                <img src="blog-image-3.jpg" alt="Blog Post 3">
+            </div>
+            <div class="blog-card-content">
+                <h3>SEO Best Practices for 2024</h3>
+                <p>Get to know the best SEO practices that will help boost your website’s visibility in search engines.</p>
+                <a href="#" class="btn-primary">Read More</a>
+            </div>
+        </div>
+
+        <!-- Blog Post 4 -->
+        <div class="blog-card">
+            <div class="blog-card-image">
+                <img src="blog-image-4.jpg" alt="Blog Post 4">
+            </div>
+            <div class="blog-card-content">
+                <h3>Mobile Apps for Business Growth</h3>
+                <p>Understand how mobile applications can take your business to the next level with improved customer engagement.</p>
+                <a href="#" class="btn-primary">Read More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- أيقونة واتساب -->
+<a href="https://wa.me/00905305462988
+" class="whatsapp-icon" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-top">
+            <div class="footer-links">
+                <h3>Uitility Page</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">terms and conditions</a></li>
+                    <li><a href="#">refound Policy</a></li>
+                  
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Get in Touch</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Digital Street, Tech City</p>
+                <p><i class="fas fa-envelope"></i> contact@digitalagency.com</p>
+                <p><i class="fas fa-phone-alt"></i> +123-456-7890</p>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Stay Updated</h3>
+                <p>Sign up for our newsletter and never miss out on our latest news and offers.</p>
+                <form action="#" method="post">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn-subscribe">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Digital Agency | All Rights Reserved</p>
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/web_crafting/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/webcrafti/" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Initialize Swiper for Reviews Section
+    var swiperReviews = new Swiper('.review-slider', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        autoplay: {
+            delay: 5000,
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            1024: {
+                slidesPerView: 3,
+            }
+        }
+    });
+    
+    // Open Review Form Modal
+    function openReviewForm() {
+        document.getElementById('review-form-modal').style.display = 'flex';
+    }
+    
+    // Close Review Form Modal
+    function closeReviewForm() {
+        document.getElementById('review-form-modal').style.display = 'none';
+    }
+    
+  
+      // Initialize Swiper for Works Section
+      var swiperWorks = new Swiper('.works-slider', {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        autoplay: {
+            delay: 4000,
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            1024: {
+                slidesPerView: 3,
+            }
+        }
+    });
+    
+    // Open Works Form Modal
+    function openWorksForm() {
+        document.getElementById('works-form-modal').style.display = 'flex';
+    }
+    
+    // Close Works Form Modal
+    function closeWorksForm() {
+        document.getElementById('works-form-modal').style.display = 'none';
+    }
+
+  </script>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
